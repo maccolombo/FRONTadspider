@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scroll Extension</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <img height="160px" src="assets/adspiderlogo2.png" alt="ADSpider">
+        <div class="form-group">
+            <label for="time">Quantidade de anuncios :</label>
+            <input type="number" id="qtd" min="1" max="60" value="1">
+            <label for="time">Tempo (minutos):</label>
+            <input type="number" id="time" min="1" max="60" value="1">
+        </div>
+        <div class="timer">
+            <span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+        <button id="start-scrolling">Start</button>
+        <button id="favoritos-button"  class="favoritos-button">Favoritos</button>
+    </div>
+    <script type="module" defer src="popup.js"></script>
+    <script defer src="content.js"></script>
+</body>
+
+</html>
